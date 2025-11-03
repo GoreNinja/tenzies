@@ -83,3 +83,45 @@ button.roll-dice {
     color: white;
     font-size: 1.2rem;
 }
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  div#root {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .dice-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .dice-container button {
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .instructions {
+    font-size: 0.9rem;
+  }
+
+  button.roll-dice {
+    width: 100%;
+    font-size: 1rem;
+    height: 45px;
+  }
+}
